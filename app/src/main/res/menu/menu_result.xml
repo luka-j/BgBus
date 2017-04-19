@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="rs.luka.android.bgbus.ui.ResultFragment">
+    <item android:id="@+id/item_directions"
+          android:title="@string/map_directions"
+          android:icon="@drawable/ic_directions"
+          app:showAsAction="always"/>
+</menu>

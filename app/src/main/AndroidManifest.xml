@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="rs.luka.android.bgbus" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+
+        <activity
+            android:name="rs.luka.android.bgbus.ui.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+        <activity
+            android:name="rs.luka.android.bgbus.ui.ResultsActivity"
+            android:label="@string/title_activity_result"
+            android:screenOrientation="portrait"> <!--TODO handle rotation in Pathfinder-friendly way-->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="rs.luka.android.bgbus.ui.MapsActivity" />
+        </activity>
+
+        <activity
+            android:name="rs.luka.android.bgbus.ui.MapsActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable"
+                       android:resource="@xml/searchable"/>
+        </activity>
+
+        <activity android:name="rs.luka.android.bgbus.ui.SplashActivity" />
+
+        <activity android:name="rs.luka.android.bgbus.ui.SettingsActivity"
+                  android:label="@string/action_settings">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="rs.luka.android.bgbus.ui.MapsActivity" />
+        </activity>
+
+        <provider
+            android:authorities="rs.luka.android.bgbus.logic.providers.SearchProvider"
+            android:name="rs.luka.android.bgbus.logic.providers.SearchProvider"
+            android:exported="false"/>
+
+    </application>
+
+</manifest>

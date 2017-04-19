@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<searchable xmlns:android="http://schemas.android.com/apk/res/android"
+            android:label="@string/app_name"
+            android:hint="@string/search_hint"
+            android:searchSuggestAuthority="rs.luka.android.bgbus.logic.providers.SearchProvider"
+            android:searchSuggestIntentAction="@string/intent_move_map_to_station">
+</searchable>

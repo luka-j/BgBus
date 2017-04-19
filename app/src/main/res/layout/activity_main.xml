@@ -1,0 +1,40 @@
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/toolbar" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/start_til"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/start_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Početna stanica"
+            android:imeOptions="actionNext"
+            android:inputType="number"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/goal_til"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/goal_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Krajnja stanica"
+            android:imeOptions="actionDone"
+            android:inputType="number"/>
+    </android.support.design.widget.TextInputLayout>
+</LinearLayout>

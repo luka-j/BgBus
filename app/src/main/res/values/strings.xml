@@ -1,0 +1,56 @@
+<resources>
+    <plurals name="directions_normal">
+        <item quantity="one">Use line %1$s to %2$s (%3$d stop)</item>
+        <item quantity="other">Use line %1$s to %2$s (%3$d stops)</item>
+    </plurals>
+
+    <string name="app_name">BGBus</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_result">Results</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="search_hint">Search places</string>
+    <string name="search_icon_title">Search</string>
+    <string name="refresh">Refresh</string>
+    <string name="route">Route </string>
+    <string name="tab_title_found">%dmin</string>
+    <string name="tab_title_searching">Searching…</string>
+    <string name="map_directions">Directions on map</string>
+    <string name="directions_initial">Initial station: %s</string>
+    <string name="directions_walk">Walk to %s</string>
+    <string name="est_time">Estimated time: %dmin</string>
+    <string name="pref_time_title">Use current time</string>
+    <string name="pref_time_summary">Determines whether current time will be used when finding optimal path</string>
+    <string name="pref_ada_title">Use ADA lines</string>
+    <string name="pref_ada_summary">ADA lines are valid only during summer</string>
+    <string name="pref_its2_title">Use suburban lines</string>
+    <string name="pref_its2_summary">Suburban lines are rare and more expensive</string>
+    <string name="pref_nightlines_title">Use night lines</string>
+    <string name="pref_nightlines_summary">If using time is enabled, you may get recommendations to night lines
+        at the appropriate time. Stops are approximate.</string>
+    <string name="pref_switch_tendency_title">Transfer aggressiveness</string>
+    <string name="pref_switch_tendency_summary">How often should transfers be preferred?</string>
+
+    <string-array name="pref_switch_tendency_items">
+        <item>Often</item>
+        <item>As necessary</item>
+        <item>Avoid switching</item>
+        <item>Only as a last resort</item>
+    </string-array>
+    <string-array name="pref_switch_tendency_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    
+    <string translateable="false" name="intent_move_map_to_station" translatable="false">rs.luka.android.bgbus.MOVE_MAP_CAMERA_TO_STATION</string>
+    <string name="set_start">Set as start</string>
+    <string name="set_goal">Set as goal</string>
+    <string name="ok">OK</string>
+    <string name="request_permissions_title">Need permissions</string>
+    <string name="request_permissions_message">BGBus needs your location and storage access in order to function properly. Please grant these permissions.</string>
+    <string name="permissions_denied_title">Permissions denied</string>
+    <string name="permissions_denied_message">App cannot work properly without requested permissions and will now exit.</string>
+    <string name="station_no">(stations: %d)</string>
+    <string name="show_stations">Show stations</string>
+</resources>

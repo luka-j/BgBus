@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <plurals name="directions_normal">
+        <item quantity="one">Vozite se linijom %1$s do %2$s (%3$d stanicu)</item>
+        <item quantity="other">Vozite se linijom %1$s do %2$s (%3$d stanica)</item>
+        <item quantity="few">Vozite se linijom %1$s do %2$s (%3$d stanice)</item>
+    </plurals>
+
+    <string name="app_name">BGBus</string>
+    <string name="action_settings">Podešavanja</string>
+    <string name="directions_initial">Početna stanica: %s</string>
+    <string name="directions_walk">Šetajte do %s</string>
+    <string name="est_time">Procenjeno vreme: %dmin</string>
+    <string name="map_directions">Uputstva na karti</string>
+    <string name="pref_ada_summary">ADA linije prevoze samo leti</string>
+    <string name="pref_ada_title">Koristi ADA linije</string>
+    <string name="pref_its2_summary">Prigradske linije idu retko i posebno se tarifiraju</string>
+    <string name="pref_its2_title">Koristi prigradske linije</string>
+    <string name="pref_nightlines_title">Koristi noćne linije</string>
+    <string name="pref_nightlines_summary">Ako je korišćenje vremena omogućeno, dobijaćete predloge da koristite noćne
+        linije u odgovarajuće vreme. Stanice su date okvirno.</string>
+    <string name="pref_time_summary">Određuje da li treba uzimati trenutno vreme u obzir</string>
+    <string name="pref_time_title">Koristi vreme</string>
+    <string name="refresh">Osveži</string>
+    <string name="route">Putanja</string>
+    <string name="search_hint">Pretraži mesta</string>
+    <string name="search_icon_title">Traži</string>
+    <string name="tab_title_searching">Tražim…</string>
+    <string name="title_activity_maps">Mapa</string>
+    <string name="title_activity_result">Rezultati</string>
+    <string name="pref_switch_tendency_summary">Koliko često bi trebalo da predlažem presedanje?</string>
+    <string name="pref_switch_tendency_title">Učestalost presedanja</string>
+
+    <string-array name="pref_switch_tendency_items">
+        <item>Često</item>
+        <item>Kada je to potrebno</item>
+        <item>Izbegavaj presedanja</item>
+        <item>Samo kao poslednju mogućnost</item>
+    </string-array>
+    <string name="set_start">Postavi početnu stanicu</string>
+    <string name="set_goal">Postavi kranju stanicu</string>
+    <string name="ok">OK</string>
+    <string name="permissions_denied_message">Aplikacija ne može pravilno da funkcioniše bez traženih dozvola i sada će izaći</string>
+    <string name="permissions_denied_title">Dozvole odbijene</string>
+    <string name="request_permissions_message">BGBus-u su potrebni Vaša lokacija i pristup skladištu kako bi funkcionisao. Molim Vas odobrite ove dozvole.</string>
+    <string name="request_permissions_title">Potrebne dozvole</string>
+    <string name="station_no">(broj stanica: %d)</string>
+    <string name="tab_title_found">%dmin</string>
+    <string name="show_stations">Prikaži stajališta</string>
+</resources>
